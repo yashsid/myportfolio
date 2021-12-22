@@ -1,0 +1,232 @@
+<HTML>
+    <head>
+    <meta name="viewport" content="initial-scale=1", width="device-size">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        width: 100%;
+        max-width: 1400px;
+        display: block;
+        margin: auto;
+        min-height: 100vh;
+        background: #191919;
+        font-family: sans-serif;
+    }
+    
+    .navbar{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+        background: #1a1a1a;
+    }
+    
+    .nav-group{
+        list-style: none;
+        display: flex;
+    }
+    
+    .na button{
+        color: #fff;
+        opacity: 0.5;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 10px 30px;
+        margin: 0 20px;
+        line-height: 80px;
+        font-size: 20px;
+    }
+    
+    .na button:hover, .nav1 button{
+    color: #fff;
+        opacity: 1;
+    text-decoration: none;
+        text-transform: capitalize;
+        padding: 10px 30px;
+        margin: 0 20px;
+        line-height: 80px;
+        font-size: 20px;
+    }
+    .home-section{
+        width: 100%;
+        height: 100vh;
+        padding: 0 150px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 0;
+        opacity: 1;
+        transition: 1s;
+        position: fixed;
+    }
+    
+    .hero-heading{
+        color: #fff;
+        font-size: 120px;
+        text-transform: capitalize;
+        font-weight: 300;
+    }
+    
+    .home-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        object-fit: cover;
+        opacity: 0.2;
+    }
+    .about-section{
+        width: 100%;
+        min-height: 100vh;
+        padding: 150px 100px 0;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        transition: 1s;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+    
+    .about{
+        color: #fff;
+        opacity: 0.6;
+        font-size: 20px;
+        line-height: 40px;
+        float: left;
+        position: relative;
+    
+    }
+    .button {
+      background-color: #1a1a1a; 
+      border: none;
+      text-color: #fff;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    .about-img{
+    position: absolute;
+        top: 0;
+        right: 0;
+        height:100vh;
+        width: 50%;
+        float: right;
+    }
+    .headin{
+    color: #fff;
+        font-size: 100px;
+        text-transform: capitalize;
+        font-weight: 300;
+    }
+    .about-hob{
+        color: #fff;
+        opacity: 0.6;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .head-hob{
+    color: #fff;
+        font-size: 100px;
+        text-transform: capitalize;
+        font-weight: 200;
+    }
+    .img-bob{
+    position: absolute;
+        top: 0;
+        right: 0;
+        height: 50vh;
+        width: 50%;
+        float: right;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <nav class="navbar">
+        <ul class="nav-group">
+    <li id="sec1" class="nav1"><button class="button"  id="home">Home</button></li>
+    <li id="sec2" class="na"><button class="button" id="About-me">About me</button></li>
+    <li id="sec3" class="na"><button class="button" id="Hobbies">Hobbies</button></li>
+        </ul>
+    </nav>
+    
+    <section class="home-section" id="section1">
+        <h1 class="hero-heading">hi, i am <br> yash</h1>
+        <img src="file:///C:/Users/sidan/project/images/WhatsApp%20Image%202021-12-22%20at%2010.56.26%20AM.jpeg" class="home-img" alt="">
+    <br>
+    </section>
+    <div class="about-section" id="section2">
+                    <h1 class="headin">Who AM I?</h1> 
+                    <br>
+                    <p class="about" A>
+                        Hi my name is yash sidana a 17 year old First year student at IIT Roorkee Production and Industrial department.
+                        I like to try new things.Working on complex problems finding out there solutions and by the way I live in gurgaon,haryana
+                    </p>
+                    
+                    <img src="file:///C:/Users/sidan/project/images/360_F_312003832_T2hmgMlJOnDYcDjKybmtyRL0k5taIetb.jpg" class="about-img" >
+    </div> 
+    <footer class="about-section" id="section2">
+                   <h1 class="head-hob">My hobbies include</h1>
+                    <br>
+                    <p class="about-hob" style="float:left">
+                        Playing and watching cricket 
+                    </p>
+                    <p class="about-hob" style="float:centre">
+                        Playing  football
+                    </p>
+                    <p class="about-hob" style="float:right">
+                        Playing badminton 
+                    </p>
+                      <br>
+                      <br>
+                   <img src="file:///C:/Users/sidan/project/images/medium-playing-talking-watching-cricket-inspirational-quotes-original-imaftbuzhvwwugnh.jpeg" class="img-bob">
+                   <img src="file:///C:/Users/sidan/project/images/download.jfif" height="200" width="300" >
+                   <img src="file:///C:/Users/sidan/project/images/shutterstock_1592944909+-+Badminton+racket+and+shuttlecock+in+motion_1200px+JPEG.jpg" height="200" width="300">
+    </footer>
+    <script>
+    let home = document.querySelector('section');
+    let about = document.querySelector('div');
+    let hobbie = document.querySelector('footer');
+                document.querySelector('#home').onclick = function() {
+                    about.style.opacity = '0';
+                    home.style.opacity = '1';
+                    hobbie.style.opacity = '0';
+                    document.getElementById("sec1").className = "nav1";
+                    document.getElementById("sec3").className = "na";
+                    document.getElementById("sec2").className = "na";
+                };
+                document.querySelector('#About-me').onclick = function() {
+                    home.style.opacity = '0';
+                    about.style.opacity = '1';
+                    hobbie.style.opacity = '0';
+                    document.getElementById("sec1").className = "na";
+                    document.getElementById("sec3").className = "na";
+                    document.getElementById("sec2").className = "nav1";
+                };
+                
+                document.querySelector('#Hobbies').onclick = function() {
+                    about.style.opacity = '0';
+                    home.style.opacity = '0';
+                    hobbie.style.opacity = '1';
+                    document.getElementById("sec1").className = "na";
+                    document.getElementById("sec3").className = "nav1";
+                    document.getElementById("sec2").className = "na";
+                };
+    
+                    
+                
+    </script> 
+    </body>
+    </html>
